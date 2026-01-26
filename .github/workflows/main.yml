@@ -1,0 +1,15 @@
+name: practice
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps: 
+    - name: checkout repository
+      uses: checkout/actions@v3
+
+    - name: output
+      run: echo "hii" 
